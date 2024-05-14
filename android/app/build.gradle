@@ -27,6 +27,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    namespace "com.example.chat_app"
     compileSdk 33
 
     sourceSets {
@@ -39,7 +40,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-            applicationId "com.example.chat_app"
+        applicationId "com.example.chat_app"
         minSdk 23
         targetSdk 33
         multiDexEnabled true
